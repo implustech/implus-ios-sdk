@@ -1,0 +1,71 @@
+PODS:
+  - BoringSSL-GRPC (0.0.3):
+    - BoringSSL-GRPC/Implementation (= 0.0.3)
+    - BoringSSL-GRPC/Interface (= 0.0.3)
+  - BoringSSL-GRPC/Implementation (0.0.3):
+    - BoringSSL-GRPC/Interface (= 0.0.3)
+  - BoringSSL-GRPC/Interface (0.0.3)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - Founq_KeychainIDFA (1.0.0)
+  - gRPC (1.21.0):
+    - gRPC-RxLibrary (= 1.21.0)
+    - gRPC/Main (= 1.21.0)
+  - gRPC-Core (1.21.0):
+    - gRPC-Core/Implementation (= 1.21.0)
+    - gRPC-Core/Interface (= 1.21.0)
+  - gRPC-Core/Implementation (1.21.0):
+    - BoringSSL-GRPC (= 0.0.3)
+    - gRPC-Core/Interface (= 1.21.0)
+    - nanopb (~> 0.3)
+  - gRPC-Core/Interface (1.21.0)
+  - gRPC-ProtoRPC (1.21.0):
+    - gRPC-ProtoRPC/Main (= 1.21.0)
+  - gRPC-ProtoRPC/Main (1.21.0):
+    - gRPC (= 1.21.0)
+    - gRPC-RxLibrary (= 1.21.0)
+    - Protobuf (~> 3.0)
+  - gRPC-RxLibrary (1.21.0)
+  - gRPC/Main (1.21.0):
+    - gRPC-Core (= 1.21.0)
+    - gRPC-RxLibrary (= 1.21.0)
+  - nanopb (0.3.9011):
+    - nanopb/decode (= 0.3.9011)
+    - nanopb/encode (= 0.3.9011)
+  - nanopb/decode (0.3.9011)
+  - nanopb/encode (0.3.9011)
+  - Protobuf (3.6.1)
+
+DEPENDENCIES:
+  - FMDB
+  - Founq_KeychainIDFA
+  - gRPC-ProtoRPC (~> 1.21.0)
+  - Protobuf (~> 3.6.1)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - BoringSSL-GRPC
+    - FMDB
+    - Founq_KeychainIDFA
+    - gRPC
+    - gRPC-Core
+    - gRPC-ProtoRPC
+    - gRPC-RxLibrary
+    - nanopb
+    - Protobuf
+
+SPEC CHECKSUMS:
+  BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  Founq_KeychainIDFA: 2c2f94ac3555f95249a9ee32957614fc9540eb46
+  gRPC: 0fd7e68260fbad66d5153864b75d98ed4d476d97
+  gRPC-Core: c9aef9a261a1247e881b18059b84d597293c9947
+  gRPC-ProtoRPC: fea7d2bb51ddd0ae6b5c5ea27033018f564084d0
+  gRPC-RxLibrary: b0eb67f4f0f4c9cdfa6a73ea2b435a3efa77f1ef
+  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
+
+PODFILE CHECKSUM: 61cfc1ff11deea318e9d03a96c258ec5fef26758
+
+COCOAPODS: 1.8.4
