@@ -7,9 +7,6 @@
 ## install  with  CocoaPods
 
 ``` 
-source 'https://github.com/CocoaPods/Specs.git'
-source 'https://gitlab.implustech.com/xiaochunlin/implusanalyticssdk.git'
-
 inhibit_all_warnings! #屏蔽所有warning
 platform :ios, '9.0'
 
@@ -17,7 +14,7 @@ target :'yrcs' do
     
     use_frameworks!
 
-    pod 'ImplusAnalytics','~>1.2.0'
+    pod 'ImplusAnalytics','~>1.0.0'
 
 end>
 ```
@@ -30,7 +27,7 @@ pod install
 
 ## 导入ImplusAnalyticsSDK头文件
 ```
-#import <ImplusAnalytics/IMAnalytics.h>
+#import <ImplusAnalyticsSDK/ImplusAnalyticsSDK.h>
 ```
 
 ## 在AppDelegate中注册SDK分配的项目指定AppKey
@@ -52,8 +49,8 @@ pod install
 [IMAnalytics clearBigDataWithUserId];
 ```
 
-## 上报统计数据
-## Report statistics
+## 上报统计数据  公共事件
+## Report statistics public event
 
 
 ## 第一次安装
@@ -130,8 +127,8 @@ NSString *tMSimestamp = [NSString stringWithFormat:@"%f",[[IMDeviceInfoManager s
     
 }];
 ```
-## 如果上面的枚举不能满足需求，请用下面方法扩展
-## If the above enumeration does not meet the requirements, extend it as follows
+## 如果上面的枚举不能满足需求，请用下面方法扩展  私定事件
+## If the above enumeration does not meet the requirements, extend it as follows (Private custom event)
 ```
 [IMAnalytics uploadBigDataWithEvent:@"event_name" params:@{
                                                                  @"name" : @"123",
