@@ -1,9 +1,7 @@
 # IMAnalyticsSDK使用方法
 
 ## 使用CocoaPods将ImplusAnalyticsSDK集成到您的Xcode项目中，请在以下位置指定Podfile：
-* 添加GitHub资源库 'https://github.com/CocoaPods/Specs.git'
-* 添加ImplusAnalyticsSDK资源库 'https://gitlab.implustech.com/xiaochunlin/implusanalyticssdk.git'
-* 
+*
 ## install  with  CocoaPods
 
 ``` 
