@@ -29,6 +29,7 @@
 		3E29CEEA23ACDE75009487E7 /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E29CEDC23ACDE75009487E7 /* IQKeyboardReturnKeyHandler.m */; };
 		3E3CC8E523AB7CD800436268 /* ShowInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CC8E323AB7CD800436268 /* ShowInfoViewController.m */; };
 		3E3CC8E623AB7CD800436268 /* ShowInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E3CC8E423AB7CD800436268 /* ShowInfoViewController.xib */; };
+		3E5B7ED1240D31D400C580FE /* ImplusAnalyticsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5B7ED0240D31D400C580FE /* ImplusAnalyticsSDK.framework */; };
 		3E81581423A87F4A008A99F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E81581323A87F4A008A99F9 /* AppDelegate.m */; };
 		3E81581723A87F4A008A99F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E81581623A87F4A008A99F9 /* ViewController.m */; };
 		3E81581A23A87F4A008A99F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E81581823A87F4A008A99F9 /* Main.storyboard */; };
@@ -37,7 +38,6 @@
 		3E81582223A87F4B008A99F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E81582123A87F4B008A99F9 /* main.m */; };
 		3E81582C23A87F4B008A99F9 /* ImplusAnalyticsSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E81582B23A87F4B008A99F9 /* ImplusAnalyticsSDKTests.m */; };
 		3E81583723A87F4B008A99F9 /* ImplusAnalyticsSDKUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E81583623A87F4B008A99F9 /* ImplusAnalyticsSDKUITests.m */; };
-		3E9392A323D330CE00ED8AC9 /* ImplusAnalyticsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E9392A223D330CE00ED8AC9 /* ImplusAnalyticsSDK.framework */; };
 		8B40F3AA6DA7C63BB0FC23C0 /* libPods-ImplusAnalyticsSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F385E4CF2F41FABE889830 /* libPods-ImplusAnalyticsSDK.a */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +102,7 @@
 		3E3CC8E223AB7CD800436268 /* ShowInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowInfoViewController.h; sourceTree = "<group>"; };
 		3E3CC8E323AB7CD800436268 /* ShowInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowInfoViewController.m; sourceTree = "<group>"; };
 		3E3CC8E423AB7CD800436268 /* ShowInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowInfoViewController.xib; sourceTree = "<group>"; };
+		3E5B7ED0240D31D400C580FE /* ImplusAnalyticsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ImplusAnalyticsSDK.framework; sourceTree = "<group>"; };
 		3E81580F23A87F49008A99F9 /* ImplusAnalyticsSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImplusAnalyticsSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E81581223A87F4A008A99F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E81581323A87F4A008A99F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -119,7 +120,6 @@
 		3E81583623A87F4B008A99F9 /* ImplusAnalyticsSDKUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImplusAnalyticsSDKUITests.m; sourceTree = "<group>"; };
 		3E81583823A87F4B008A99F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E81585923A882E6008A99F9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = GGAppsflyerAnalyticsSDK/ImplusAnalyticsSDK/README.md; sourceTree = "<group>"; };
-		3E9392A223D330CE00ED8AC9 /* ImplusAnalyticsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ImplusAnalyticsSDK.framework; sourceTree = "<group>"; };
 		C2F385E4CF2F41FABE889830 /* libPods-ImplusAnalyticsSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ImplusAnalyticsSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -128,7 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E9392A323D330CE00ED8AC9 /* ImplusAnalyticsSDK.framework in Frameworks */,
+				3E5B7ED1240D31D400C580FE /* ImplusAnalyticsSDK.framework in Frameworks */,
 				8B40F3AA6DA7C63BB0FC23C0 /* libPods-ImplusAnalyticsSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +308,7 @@
 		3E81584723A882E6008A99F9 /* GGModuleAnalysic */ = {
 			isa = PBXGroup;
 			children = (
-				3E9392A223D330CE00ED8AC9 /* ImplusAnalyticsSDK.framework */,
+				3E5B7ED0240D31D400C580FE /* ImplusAnalyticsSDK.framework */,
 			);
 			path = GGModuleAnalysic;
 			sourceTree = "<group>";
