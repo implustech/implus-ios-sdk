@@ -21,9 +21,9 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/XiaoChunLin/Im.git'
+  s.homepage         = 'https://github.com/implustech/implus-ios-sdk.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'mrxiaochunlin' => '401009754@qq.com' }
+  s.author           = { 'Implus.co' => 'cocoapods@implustech.com ' }
   s.source           = { :git => 'https://github.com/implustech/implus-ios-sdk.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
