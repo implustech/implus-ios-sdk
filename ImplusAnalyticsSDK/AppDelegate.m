@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <ImplusAnalyticsSDK/ImplusAnalyticsSDK.h>
+#import <ImplusAnalytics/ImplusAnalytics.h>
 #import "IQKeyBoardManager/IQKeyboardManager.h"
 #define appKey @"eyJhbGciOiJSUzI1NiIsImtpZCI6IjAwMDEiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhOTI4MzA0My0xNTgyLTRjMDQtYjMzMy1kOTIyYjczZGI3YmIiLCJpYXQiOjE1NzcwODYxNjUsImlzcyI6Ik1vbmV0aXplciIsInN1YiI6IjVkZjA2OTIwN2QxOTJiMDAxMDFlMjUwYSJ9.ENTDlaSWNtUUMWwblpJYMUo00hdt1mfTcg1RHH2k5Pxb-LBpf1TmnwXNOoWBXaiO0CN7VKHxc8XeamCQPKpNTST3Tgjs-lFZcBZrO6Z1gwc-OcJBZIL6zPVSHCE1yGQCQhfQ5RyK-AFtIPHbf8SNV8ov_BnHhsyC43KyJIoh8-XYgEfDVoG8rdlRRKm0U6xb1dtCEQRHVTLmLPj9Hc_7fCTc2G-aTI7be-OkEm-9Q4APdL_2pAuXmJ9D-ZO0ShmoRvR1KXIiEs2XRLR5nNmhaptvqoxXtxXBgP-CX9H-MxyO_i8kdvPPrYPqo8Srs7olz2dvJw6hYDO2961irYGUKg"
 @interface AppDelegate ()
@@ -21,7 +21,7 @@
     
     [IMAnalytics registerBigDataWithAppKey:appKey];
     [IQKeyboardManager sharedManager].enable = YES;
-    [IMAnalytics uploadBigDateWithType:EventTypeAppStart params:nil successBlock:^(id obj) {
+    [IMAnalytics uploadBigDataWithType:EventTypeAppStart params:nil successBlock:^(id obj) {
          NSLog(@"%@",obj);
      } failureBlock:^(id obj) {
          NSLog(@"%@",obj);

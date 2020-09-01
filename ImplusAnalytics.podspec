@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ImplusAnalytics'
-  s.version          = '1.0.3'
+  s.version          = '1.1.0'
   s.summary          = 'A short description of ImplusAnalyticsSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -29,7 +29,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.vendored_frameworks  = "ImplusAnalyticsSDK/GGModuleAnalysic/ImplusAnalyticsSDK.framework"
+  s.vendored_frameworks  = "ImplusAnalyticsSDK/GGModuleAnalysic/ImplusAnalytics.framework"
 
   #s.source_files = 'ImplusAnalyticsSDK/GGModuleAnalysic/*.h'
   

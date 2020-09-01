@@ -29,7 +29,6 @@
 		3E29CEEA23ACDE75009487E7 /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E29CEDC23ACDE75009487E7 /* IQKeyboardReturnKeyHandler.m */; };
 		3E3CC8E523AB7CD800436268 /* ShowInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CC8E323AB7CD800436268 /* ShowInfoViewController.m */; };
 		3E3CC8E623AB7CD800436268 /* ShowInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E3CC8E423AB7CD800436268 /* ShowInfoViewController.xib */; };
-		3E5B7ED1240D31D400C580FE /* ImplusAnalyticsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5B7ED0240D31D400C580FE /* ImplusAnalyticsSDK.framework */; };
 		3E81581423A87F4A008A99F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E81581323A87F4A008A99F9 /* AppDelegate.m */; };
 		3E81581723A87F4A008A99F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E81581623A87F4A008A99F9 /* ViewController.m */; };
 		3E81581A23A87F4A008A99F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E81581823A87F4A008A99F9 /* Main.storyboard */; };
@@ -38,7 +37,9 @@
 		3E81582223A87F4B008A99F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E81582123A87F4B008A99F9 /* main.m */; };
 		3E81582C23A87F4B008A99F9 /* ImplusAnalyticsSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E81582B23A87F4B008A99F9 /* ImplusAnalyticsSDKTests.m */; };
 		3E81583723A87F4B008A99F9 /* ImplusAnalyticsSDKUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E81583623A87F4B008A99F9 /* ImplusAnalyticsSDKUITests.m */; };
-		8B40F3AA6DA7C63BB0FC23C0 /* libPods-ImplusAnalyticsSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F385E4CF2F41FABE889830 /* libPods-ImplusAnalyticsSDK.a */; };
+		51E468FC915D34725E67C14C /* Pods_ImplusAnalyticsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 307B397E84DD572CFD62FAD7 /* Pods_ImplusAnalyticsSDK.framework */; };
+		59A3B6BB24FE7C5B00AB60DF /* ImplusAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A3B6B924FE7C5800AB60DF /* ImplusAnalytics.framework */; };
+		59A3B6BC24FE7C5B00AB60DF /* ImplusAnalytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 59A3B6B924FE7C5800AB60DF /* ImplusAnalytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +59,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		59513BD824FE62E800DF18EB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				59A3B6BC24FE7C5B00AB60DF /* ImplusAnalytics.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		19E6D82B3BE513DD4041DDBA /* Pods-ImplusAnalyticsSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImplusAnalyticsSDK.release.xcconfig"; path = "Target Support Files/Pods-ImplusAnalyticsSDK/Pods-ImplusAnalyticsSDK.release.xcconfig"; sourceTree = "<group>"; };
 		2263F856423C0657D91DAA73 /* Pods-ImplusAnalyticsSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImplusAnalyticsSDK.debug.xcconfig"; path = "Target Support Files/Pods-ImplusAnalyticsSDK/Pods-ImplusAnalyticsSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		307B397E84DD572CFD62FAD7 /* Pods_ImplusAnalyticsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImplusAnalyticsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E29CEAB23ACBA2B009487E7 /* CrashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashViewController.h; sourceTree = "<group>"; };
 		3E29CEAC23ACBA2B009487E7 /* CrashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashViewController.m; sourceTree = "<group>"; };
 		3E29CEAD23ACBA2B009487E7 /* CrashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CrashViewController.xib; sourceTree = "<group>"; };
@@ -102,7 +118,6 @@
 		3E3CC8E223AB7CD800436268 /* ShowInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowInfoViewController.h; sourceTree = "<group>"; };
 		3E3CC8E323AB7CD800436268 /* ShowInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowInfoViewController.m; sourceTree = "<group>"; };
 		3E3CC8E423AB7CD800436268 /* ShowInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowInfoViewController.xib; sourceTree = "<group>"; };
-		3E5B7ED0240D31D400C580FE /* ImplusAnalyticsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ImplusAnalyticsSDK.framework; sourceTree = "<group>"; };
 		3E81580F23A87F49008A99F9 /* ImplusAnalyticsSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImplusAnalyticsSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E81581223A87F4A008A99F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E81581323A87F4A008A99F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -120,7 +135,7 @@
 		3E81583623A87F4B008A99F9 /* ImplusAnalyticsSDKUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImplusAnalyticsSDKUITests.m; sourceTree = "<group>"; };
 		3E81583823A87F4B008A99F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E81585923A882E6008A99F9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = GGAppsflyerAnalyticsSDK/ImplusAnalyticsSDK/README.md; sourceTree = "<group>"; };
-		C2F385E4CF2F41FABE889830 /* libPods-ImplusAnalyticsSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ImplusAnalyticsSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59A3B6B924FE7C5800AB60DF /* ImplusAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ImplusAnalytics.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +143,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E5B7ED1240D31D400C580FE /* ImplusAnalyticsSDK.framework in Frameworks */,
-				8B40F3AA6DA7C63BB0FC23C0 /* libPods-ImplusAnalyticsSDK.a in Frameworks */,
+				51E468FC915D34725E67C14C /* Pods_ImplusAnalyticsSDK.framework in Frameworks */,
+				59A3B6BB24FE7C5B00AB60DF /* ImplusAnalytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +168,7 @@
 		06619B664AD09028455B175E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C2F385E4CF2F41FABE889830 /* libPods-ImplusAnalyticsSDK.a */,
+				307B397E84DD572CFD62FAD7 /* Pods_ImplusAnalyticsSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -308,7 +323,7 @@
 		3E81584723A882E6008A99F9 /* GGModuleAnalysic */ = {
 			isa = PBXGroup;
 			children = (
-				3E5B7ED0240D31D400C580FE /* ImplusAnalyticsSDK.framework */,
+				59A3B6B924FE7C5800AB60DF /* ImplusAnalytics.framework */,
 			);
 			path = GGModuleAnalysic;
 			sourceTree = "<group>";
@@ -333,7 +348,8 @@
 				3E81580B23A87F49008A99F9 /* Sources */,
 				3E81580C23A87F49008A99F9 /* Frameworks */,
 				3E81580D23A87F49008A99F9 /* Resources */,
-				2602EC37A005C0DFB1D6C98C /* [CP] Copy Pods Resources */,
+				59513BD824FE62E800DF18EB /* Embed Frameworks */,
+				5A243708E3345E0C1E53130E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -477,21 +493,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2602EC37A005C0DFB1D6C98C /* [CP] Copy Pods Resources */ = {
+		5A243708E3345E0C1E53130E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ImplusAnalyticsSDK/Pods-ImplusAnalyticsSDK-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ImplusAnalyticsSDK/Pods-ImplusAnalyticsSDK-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ImplusAnalyticsSDK/Pods-ImplusAnalyticsSDK-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ImplusAnalyticsSDK/Pods-ImplusAnalyticsSDK-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImplusAnalyticsSDK/Pods-ImplusAnalyticsSDK-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImplusAnalyticsSDK/Pods-ImplusAnalyticsSDK-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -693,7 +709,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JT8BQL87YQ;
+				DEVELOPMENT_TEAM = QUR34Y62R3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ImplusAnalyticsSDK/IQKeyBoardManager",
@@ -730,7 +746,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JT8BQL87YQ;
+				DEVELOPMENT_TEAM = QUR34Y62R3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ImplusAnalyticsSDK/IQKeyBoardManager",

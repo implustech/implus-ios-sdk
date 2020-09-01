@@ -1,0 +1,6 @@
+framework module ImplusAnalytics {
+  umbrella header "ImplusAnalytics.h"
+
+  export *
+  module * { export * }
+}
