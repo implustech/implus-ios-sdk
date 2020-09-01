@@ -7,7 +7,7 @@
 //
 
 #import "ShowInfoViewController.h"
-#import <ImplusAnalyticsSDK/ImplusAnalyticsSDK.h>
+#import <ImplusAnalytics/ImplusAnalytics.h>
 #import "dataParams.h"
 @interface ShowInfoViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *textView;
@@ -43,9 +43,9 @@
 //    NSString *tMSimestamp = [NSString stringWithFormat:@"%f",[[IMDeviceInfoManager sharedManager] getCurrentMSimestamp]];
     ParamModel *model = [ParamModel new];
     model.screenType = ParamScreenHome;
-    [IMAnalytics uploadBigDateWithType:EventTypeUserEngagement paramModel:model];
+    [IMAnalytics uploadBigDataWithType:EventTypeUserEngagement paramModel:model];
     //obj type is string
-    [IMAnalytics uploadBigDateWithType:EventTypeUserEngagement params:@{kScreenViewName:kHomepage} successBlock:^(id obj) {
+    [IMAnalytics uploadBigDataWithType:EventTypeUserEngagement params:@{kScreenViewName:kHomepage} successBlock:^(id obj) {
 
     } failureBlock:^(id obj) {
 
@@ -59,7 +59,7 @@
     [self startTimer];
 }
 - (IBAction)upLoad:(id)sender {
-    [IMAnalytics uploadBigDateWithEvent:self.eventName params:self.dict successBlock:^(id obj) {
+    [IMAnalytics uploadBigDataWithEvent:self.eventName params:self.dict successBlock:^(id obj) {
         [self updataUIWithString:obj];
     } failureBlock:^(id obj) {
         [self updataUIWithString:obj];
@@ -68,7 +68,7 @@
 - (IBAction)whileUp:(UIButton *)sender {
     int i = 10;
     while (i>0) {
-        [IMAnalytics uploadBigDateWithEvent:self.eventName params:self.dict successBlock:^(id obj) {
+        [IMAnalytics uploadBigDataWithEvent:self.eventName params:self.dict successBlock:^(id obj) {
             [self updataUIWithString:obj];
         } failureBlock:^(id obj) {
             [self updataUIWithString:obj];

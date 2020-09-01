@@ -7,7 +7,7 @@
 //
 
 #import "dataParams.h"
-#import <ImplusAnalyticsSDK/ImplusAnalyticsSDK.h>
+#import <ImplusAnalytics/ImplusAnalytics.h>
 #import "dataParamsCellTableViewCell.h"
 
 @interface dataParams()<UITableViewDelegate,UITableViewDataSource>

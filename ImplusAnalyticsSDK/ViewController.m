@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 //#import "IMDeviceInfoManager.h"
-#import <ImplusAnalyticsSDK/ImplusAnalyticsSDK.h>
+#import <ImplusAnalytics/ImplusAnalytics.h>
 #import "ShowInfoViewController.h"
 #import "CrashViewController.h"
 
