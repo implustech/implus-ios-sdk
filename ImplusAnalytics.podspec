@@ -29,7 +29,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.vendored_frameworks  = "ImplusAnalyticsSDK/GGModuleAnalysic/ImplusAnalytics.framework"
+  s.vendored_frameworks  = "ImplusAnalyticsSDK/GGModuleAnalysic/ImplusAnalytics.xcframework"
 
   #s.source_files = 'ImplusAnalyticsSDK/GGModuleAnalysic/*.h'
   
