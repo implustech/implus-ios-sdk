@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -38,8 +38,8 @@
 		3E81582C23A87F4B008A99F9 /* ImplusAnalyticsSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E81582B23A87F4B008A99F9 /* ImplusAnalyticsSDKTests.m */; };
 		3E81583723A87F4B008A99F9 /* ImplusAnalyticsSDKUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E81583623A87F4B008A99F9 /* ImplusAnalyticsSDKUITests.m */; };
 		51E468FC915D34725E67C14C /* Pods_ImplusAnalyticsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 307B397E84DD572CFD62FAD7 /* Pods_ImplusAnalyticsSDK.framework */; };
-		59A3B6BB24FE7C5B00AB60DF /* ImplusAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A3B6B924FE7C5800AB60DF /* ImplusAnalytics.framework */; };
-		59A3B6BC24FE7C5B00AB60DF /* ImplusAnalytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 59A3B6B924FE7C5800AB60DF /* ImplusAnalytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		59A3B6C624FF775C00AB60DF /* ImplusAnalytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A3B6C424FF774D00AB60DF /* ImplusAnalytics.xcframework */; };
+		59A3B6C724FF775C00AB60DF /* ImplusAnalytics.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 59A3B6C424FF774D00AB60DF /* ImplusAnalytics.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +66,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				59A3B6BC24FE7C5B00AB60DF /* ImplusAnalytics.framework in Embed Frameworks */,
+				59A3B6C724FF775C00AB60DF /* ImplusAnalytics.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +135,7 @@
 		3E81583623A87F4B008A99F9 /* ImplusAnalyticsSDKUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImplusAnalyticsSDKUITests.m; sourceTree = "<group>"; };
 		3E81583823A87F4B008A99F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E81585923A882E6008A99F9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = GGAppsflyerAnalyticsSDK/ImplusAnalyticsSDK/README.md; sourceTree = "<group>"; };
-		59A3B6B924FE7C5800AB60DF /* ImplusAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ImplusAnalytics.framework; sourceTree = "<group>"; };
+		59A3B6C424FF774D00AB60DF /* ImplusAnalytics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ImplusAnalytics.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,8 +143,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59A3B6C624FF775C00AB60DF /* ImplusAnalytics.xcframework in Frameworks */,
 				51E468FC915D34725E67C14C /* Pods_ImplusAnalyticsSDK.framework in Frameworks */,
-				59A3B6BB24FE7C5B00AB60DF /* ImplusAnalytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +323,7 @@
 		3E81584723A882E6008A99F9 /* GGModuleAnalysic */ = {
 			isa = PBXGroup;
 			children = (
-				59A3B6B924FE7C5800AB60DF /* ImplusAnalytics.framework */,
+				59A3B6C424FF774D00AB60DF /* ImplusAnalytics.xcframework */,
 			);
 			path = GGModuleAnalysic;
 			sourceTree = "<group>";
