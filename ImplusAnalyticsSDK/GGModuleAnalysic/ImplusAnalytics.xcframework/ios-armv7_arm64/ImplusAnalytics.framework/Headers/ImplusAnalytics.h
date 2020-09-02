@@ -20,4 +20,5 @@ FOUNDATION_EXPORT const unsigned char ImplusAnalyticsVersionString[];
 #import <ImplusAnalytics/IMRequestMacro.h>
 #import <ImplusAnalytics/IMRequestManager.h>
 #import <ImplusAnalytics/IMSignalHandler.h>
+#import <ImplusAnalytics/IMDeviceInfoManager.h>
 

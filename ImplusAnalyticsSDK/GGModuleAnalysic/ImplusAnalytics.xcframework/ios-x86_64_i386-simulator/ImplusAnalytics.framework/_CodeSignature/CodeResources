@@ -8,6 +8,10 @@
 		<data>
 		MpYD+kx/DcfEJPk5+WiujbfIa8c=
 		</data>
+		<key>Headers/IMDeviceInfoManager.h</key>
+		<data>
+		ErKiklIUR5otG1Hl8p1s4yuvpec=
+		</data>
 		<key>Headers/IMRequestMacro.h</key>
 		<data>
 		4lHEdRNU5uKwiaaUJyANnGmlhNI=
@@ -22,7 +26,7 @@
 		</data>
 		<key>Headers/ImplusAnalytics.h</key>
 		<data>
-		f7LvRPgFobIcDR2N8A5EzzDfiGk=
+		SsIDBC4uejcneHCFKC9vOrYdLFM=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -74,6 +78,17 @@
 			fC11/ebDqa7ZJXTsap4pbSFO8up0OEPh2j369VI1EyM=
 			</data>
 		</dict>
+		<key>Headers/IMDeviceInfoManager.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ErKiklIUR5otG1Hl8p1s4yuvpec=
+			</data>
+			<key>hash2</key>
+			<data>
+			QDCh9k/JbiXIgkufvhgfAbmst++QAFQbuBxSFyjTc5A=
+			</data>
+		</dict>
 		<key>Headers/IMRequestMacro.h</key>
 		<dict>
 			<key>hash</key>
@@ -111,11 +126,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			f7LvRPgFobIcDR2N8A5EzzDfiGk=
+			SsIDBC4uejcneHCFKC9vOrYdLFM=
 			</data>
 			<key>hash2</key>
 			<data>
-			FqZbbq1yIevQv+gOB2F3LhSQz761ZMdu41i9UlB1dtw=
+			j7VqLracyGgF44ZEGfJ/8TawJkAhDxsHCKxS6kDKDBE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
