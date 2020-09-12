@@ -37,10 +37,10 @@ TODO: Add long description of the pod here.
   #   'ImplusAnalyticsSDK' => ['ImplusAnalyticsSDK/Assets/*.png']
   # }
 
-  s.dependency 'gRPC-ProtoRPC', '~>1.21.0'
+  s.dependency 'gRPC-ProtoRPC', '~>1.31.0'
   s.dependency 'FMDB' 
   s.dependency 'Founq_KeychainIDFA'
-  s.dependency 'Protobuf','~>3.6.1'
+  s.dependency 'Protobuf','~>3.13.0'
 
   s.pod_target_xcconfig = {
     # This is needed by all pods that depend on Protobuf:
