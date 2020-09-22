@@ -1,6 +1,0 @@
-framework module Founq_KeychainIDFA {
-  umbrella header "Founq_KeychainIDFA-umbrella.h"
-
-  export *
-  module * { export * }
-}
