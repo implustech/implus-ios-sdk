@@ -9,7 +9,7 @@ target 'ImplusAnalyticsSDK' do
    pod 'FMDB'
    pod 'Founq_KeychainIDFA'
 #   pod 'gRRCTest', :path => '.'
-   pod "gRPC-ProtoRPC",'~>1.21.0'
+   pod "gRPC-ProtoRPC",'~>1.31.0'
 #   pod "gRPC"
-   pod "Protobuf",'~>3.6.1'
+   pod "Protobuf",'~>3.13.0'
 end
