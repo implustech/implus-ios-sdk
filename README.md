@@ -1,14 +1,12 @@
-# IMAnalyticsSDK使用方法
+# ImplusAnalytics SDK
 
-## 使用CocoaPods将ImplusAnalyticsSDK集成到您的Xcode项目中，请在以下位置指定Podfile：
-*
-## install  with  CocoaPods
+## Install  with  CocoaPods
 
 ``` 
-inhibit_all_warnings! #屏蔽所有warning
+inhibit_all_warnings!
 platform :ios, '9.0'
 
-target :'yrcs' do
+target :'MyApp' do
     
     use_frameworks!
 
@@ -17,19 +15,15 @@ target :'yrcs' do
 end>
 ```
 
-## 安装ImplusAnalyticsSDK
-* 打开终端cd到目标Podfile文件路径, 执行pod install安装SDK
-```
-pod install
-```
-
-## 导入ImplusAnalyticsSDK头文件
+##  Importing the ImplusAnalytics SDK header file
 ```
 #import <ImplusAnalyticsSDK/ImplusAnalyticsSDK.h>
 ```
 
-## 在AppDelegate中注册SDK分配的项目指定AppKey
-## Register in AppDelegate with AppKey
+## Setup
+
+Register ImplusAnalytics SDK in AppDelegate with AppKey
+
 ```
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
@@ -38,87 +32,49 @@ pod install
 }
 ```
 
-## 上报统计数据  公共事件
-## Report statistics public event
+***
+# Events
+ImplusAnalytics SDK provides you with a default event list. If it's not sufficient for you can create your custom events. Below you will find instructions on how to send events with and without parameters.
 
+## Default event types
+* EventTypeFirstOpen - First time app opened
+* EventTypeAppStart - App launched
+* EventTypeScreenView - Current screen
+* EventTypeAdsClick - Ad tapped
+* EventTypeAdsShow - Ad displayed
+* EventTypeAdsRequest - Ad requested
+* EventTypeInAppPurchase - In app purchases completed
+* EventTypeUserEngagement - User engagement
 
-## 第一次安装
-## First installation
+## Sending default events
+####  Without parameters
 ```
-[IMAnalytics uploadBigDataWithType:EventTypeFirstOpen params:nil]
-
-```
-## App 启动
-##The App launched
-```
-[IMAnalytics uploadBigDataWithType:EventTypeAppStart params:nil];
-
-```
-## 当前UV
-##The App current uv
-```
- [IMAnalytics uploadBigDataWithType:EventTypeScreenView params:@{kScreenViewName:kHomepage}];
- or 
- ParamModel *model = [ParamModel new];
- model.screenType =  ParamScreenHome;
- [IMAnalytics uploadBigDataWithType:EventTypeScreenView paramModel:model];
-
-```
-## 广告点击
-# ads click
-```
-[IMAnalytics uploadBigDataWithType:EventTypeAdsClick params:@{kPlacement:kQuickClean,kFormat:kBanner}];
- or 
- ParamModel *model = [ParamModel new];
- model.placeType =  ParamPlaceClean;
- model.formatType = ParamFormatBanner;
- [IMAnalytics uploadBigDataWithType:EventTypeAdsClick paramModel:model];
-```
-## 广告显示
-# ads show
-```
-[IMAnalytics uploadBigDataWithType:EventTypeAdsShow params:@{kPlacement:kQuickClean,kFormat:kBanner}];
- or 
- ParamModel *model = [ParamModel new];
- model.placeType =  ParamPlaceClean;
- model.formatType = ParamFormatBanner;
-[IMAnalytics uploadBigDataWithType:EventTypeAdsShow paramModel:model];
-```
-## 广告请求
-# ads request
-```
-[IMAnalytics uploadBigDataWithType:EventTypeAdsRequest params:@{kPlacement:kQuickClean,kFormat:kBanner}];
- or 
- ParamModel *model = [ParamModel new];
- model.placeType =  ParamPlaceClean;
- model.formatType = ParamFormatBanner;
-[IMAnalytics uploadBigDataWithType:EventTypeAdsRequest paramModel:model];
-```
-## In app purchase
-```
-[IMAnalytics uploadBigDataWithType:EventTypeInAppPurchase params:@{kPlacement:kQuickClean,kFormat:kBanner}];
- or 
- ParamModel *model = [ParamModel new];
- model.placeType =  ParamPlaceClean;
- model.formatType = ParamFormatBanner;
-[IMAnalytics uploadBigDataWithType:EventTypeInAppPurchase paramModel:model];
-
+[IMAnalytics uploadBigDataWithType:EventType params:nil]
 ```
 
-## ev_User_Engagement
-##  ev_User_Engagement
+#### With custom parameters
 ```
-NSString *tMSimestamp = [NSString stringWithFormat:@"%f",[[IMDeviceInfoManager sharedManager] getCurrentMSimestamp]];
-[IMAnalytics uploadBigDataWithType:EventTypeUserEngagement params:@{kEngagementTimeMsec:tMSimestamp,kScreenViewName:kHomepage}];
- or 
- NSString *tMSimestamp = [NSString stringWithFormat:@"%f",[[IMDeviceInfoManager sharedManager] getCurrentMSimestamp]];
- ParamModel *model = [ParamModel new];
- model.screenType = ParamScreenHome;
- model.otherData = @{kEngagementTimeMsec:tMSimestamp};
-[IMAnalytics uploadBigDataWithType:EventTypeUserEngagement paramModel:model];
+ [IMAnalytics uploadBigDataWithType:EventType params:@{@"key":@"value"}];
 ```
-## 如果上面方法中，需要回调函数，用类似下面的方法
-## If you need a callback in the above method, do something like this
+
+#### With ParamModel
+```
+ParamModel *model = [ParamModel new];
+model.screenType =  ParamScreenHome;
+model.formatType = ParamFormatBanner;
+model.placeType = ParamPlaceInstall;
+model.adsouceType = ParamAdSouceNono;
+model.otherData = @{@"key":@"value"};
+[IMAnalytics uploadBigDataWithType:EventType paramModel:model];
+```
+
+## Sending custom events
+```
+[IMAnalytics uploadBigDataWithEvent:@"event_name" params:@{@"key":@"value"}];
+```
+Parameter settings can be the same as sending default event
+
+## Sending events with callback
 ```
 //obj type is string
 [IMAnalytics uploadBigDataWithType:EventTypeUserEngagement params:@{kEngagementTimeMsec:tMSimestamp,kScreenViewName:kHomepage} successBlock:^(id obj) {
@@ -127,13 +83,3 @@ NSString *tMSimestamp = [NSString stringWithFormat:@"%f",[[IMDeviceInfoManager s
     
 }];
 ```
-## 如果上面的枚举不能满足需求，请用下面方法扩展  私定事件
-## If the above enumeration does not meet the requirements, extend it as follows (Private custom event)
-```
-[IMAnalytics uploadBigDataWithEvent:@"event_name" params:@{
-                                                                 @"name" : @"123",
-                                                                 @"time" : @"456"
-                                                                 }];
-```
-
-
