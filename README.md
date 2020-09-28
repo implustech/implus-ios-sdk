@@ -61,12 +61,16 @@ ImplusAnalytics SDK provides you with a default event list. If it's not sufficie
 ```
 ParamModel *model = [ParamModel new];
 model.screenType =  ParamScreenHome;
-model.formatType = ParamFormatBanner;
-model.placeType = ParamPlaceInstall;
-model.adsouceType = ParamAdSouceNono;
-model.otherData = @{@"key":@"value"};
 [IMAnalytics uploadBigDataWithType:EventType paramModel:model];
 ```
+ 
+ `ParamModel` parameters:
+ * `screenType`
+ * `placeType`
+ * `adsouceType`
+ * `formatType`
+
+If the parameter was not set it will have a default value.
 
 ## Sending custom events
 ```
