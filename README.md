@@ -95,7 +95,8 @@ pod install
 [IMAnalytics uploadBigDataWithType:EventTypeAdsRequest paramModel:model];
 ```
 ## In app purchase
-```[IMAnalytics uploadBigDataWithType:EventTypeInAppPurchase params:@{kPlacement:kQuickClean,kFormat:kBanner}];
+```
+[IMAnalytics uploadBigDataWithType:EventTypeInAppPurchase params:@{kPlacement:kQuickClean,kFormat:kBanner}];
  or 
  ParamModel *model = [ParamModel new];
  model.placeType =  ParamPlaceClean;
