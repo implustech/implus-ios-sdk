@@ -38,15 +38,6 @@ pod install
 }
 ```
 
-## 当获取到项目用户userId时, 调用SDK方法registerBigDataWithUserId, 注册SDK用户ID, 当用户退出时需清除userId
-## if have userId , you can use registerBigDataWithUserId api in IMAnalytics, and  Clear when the user exits
-```
-//register
-[IMAnalytics registerBigDataWithUserId:@"123456"];
-//clear
-[IMAnalytics clearBigDataWithUserId];
-```
-
 ## 上报统计数据  公共事件
 ## Report statistics public event
 
@@ -54,72 +45,82 @@ pod install
 ## 第一次安装
 ## First installation
 ```
-[IMAnalytics uploadBigDateWithType:EventTypeFirstOpen params:nil]
+[IMAnalytics uploadBigDataWithType:EventTypeFirstOpen params:nil]
 
 ```
 ## App 启动
 ##The App launched
 ```
-[IMAnalytics uploadBigDateWithType:EventTypeAppStart params:nil];
+[IMAnalytics uploadBigDataWithType:EventTypeAppStart params:nil];
 
 ```
 ## 当前UV
 ##The App current uv
 ```
- [IMAnalytics uploadBigDateWithType:EventTypeScreenView params:@{kScreenViewName:kHomepage}];
+ [IMAnalytics uploadBigDataWithType:EventTypeScreenView params:@{kScreenViewName:kHomepage}];
  or 
  ParamModel *model = [ParamModel new];
  model.screenType =  ParamScreenHome;
- [IMAnalytics uploadBigDateWithType:EventTypeScreenView paramModel:model];
+ [IMAnalytics uploadBigDataWithType:EventTypeScreenView paramModel:model];
 
 ```
 ## 广告点击
 # ads click
 ```
-[IMAnalytics uploadBigDateWithType:EventTypeAdsClick params:@{kPlacement:kQuickClean,kFormat:kBanner}];
+[IMAnalytics uploadBigDataWithType:EventTypeAdsClick params:@{kPlacement:kQuickClean,kFormat:kBanner}];
  or 
  ParamModel *model = [ParamModel new];
  model.placeType =  ParamPlaceClean;
  model.formatType = ParamFormatBanner;
- [IMAnalytics uploadBigDateWithType:EventTypeAdsClick paramModel:model];
+ [IMAnalytics uploadBigDataWithType:EventTypeAdsClick paramModel:model];
 ```
 ## 广告显示
 # ads show
 ```
-[IMAnalytics uploadBigDateWithType:EventTypeAdsShow params:@{kPlacement:kQuickClean,kFormat:kBanner}];
+[IMAnalytics uploadBigDataWithType:EventTypeAdsShow params:@{kPlacement:kQuickClean,kFormat:kBanner}];
  or 
  ParamModel *model = [ParamModel new];
  model.placeType =  ParamPlaceClean;
  model.formatType = ParamFormatBanner;
-[IMAnalytics uploadBigDateWithType:EventTypeAdsShow paramModel:model];
+[IMAnalytics uploadBigDataWithType:EventTypeAdsShow paramModel:model];
 ```
 ## 广告请求
 # ads request
 ```
-[IMAnalytics uploadBigDateWithType:EventTypeAdsRequest params:@{kPlacement:kQuickClean,kFormat:kBanner}];
+[IMAnalytics uploadBigDataWithType:EventTypeAdsRequest params:@{kPlacement:kQuickClean,kFormat:kBanner}];
  or 
  ParamModel *model = [ParamModel new];
  model.placeType =  ParamPlaceClean;
  model.formatType = ParamFormatBanner;
-[IMAnalytics uploadBigDateWithType:EventTypeAdsRequest paramModel:model];
+[IMAnalytics uploadBigDataWithType:EventTypeAdsRequest paramModel:model];
 ```
+## In app purchase
+```[IMAnalytics uploadBigDataWithType:EventTypeInAppPurchase params:@{kPlacement:kQuickClean,kFormat:kBanner}];
+ or 
+ ParamModel *model = [ParamModel new];
+ model.placeType =  ParamPlaceClean;
+ model.formatType = ParamFormatBanner;
+[IMAnalytics uploadBigDataWithType:EventTypeInAppPurchase paramModel:model];
+
+```
+
 ## ev_User_Engagement
 ##  ev_User_Engagement
 ```
 NSString *tMSimestamp = [NSString stringWithFormat:@"%f",[[IMDeviceInfoManager sharedManager] getCurrentMSimestamp]];
-[IMAnalytics uploadBigDateWithType:EventTypeUserEngagement params:@{kEngagementTimeMsec:tMSimestamp,kScreenViewName:kHomepage}];
+[IMAnalytics uploadBigDataWithType:EventTypeUserEngagement params:@{kEngagementTimeMsec:tMSimestamp,kScreenViewName:kHomepage}];
  or 
  NSString *tMSimestamp = [NSString stringWithFormat:@"%f",[[IMDeviceInfoManager sharedManager] getCurrentMSimestamp]];
  ParamModel *model = [ParamModel new];
  model.screenType = ParamScreenHome;
  model.otherData = @{kEngagementTimeMsec:tMSimestamp};
-[IMAnalytics uploadBigDateWithType:EventTypeUserEngagement paramModel:model];
+[IMAnalytics uploadBigDataWithType:EventTypeUserEngagement paramModel:model];
 ```
 ## 如果上面方法中，需要回调函数，用类似下面的方法
 ## If you need a callback in the above method, do something like this
 ```
 //obj type is string
-[IMAnalytics uploadBigDateWithType:EventTypeUserEngagement params:@{kEngagementTimeMsec:tMSimestamp,kScreenViewName:kHomepage} successBlock:^(id obj) {
+[IMAnalytics uploadBigDataWithType:EventTypeUserEngagement params:@{kEngagementTimeMsec:tMSimestamp,kScreenViewName:kHomepage} successBlock:^(id obj) {
     
 } failureBlock:^(id obj) {
     
