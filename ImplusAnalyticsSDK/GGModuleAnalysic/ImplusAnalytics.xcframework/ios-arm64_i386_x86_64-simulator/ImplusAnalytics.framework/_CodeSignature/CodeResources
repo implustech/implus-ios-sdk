@@ -10,11 +10,11 @@
 		</data>
 		<key>Headers/IMDeviceInfoManager.h</key>
 		<data>
-		ErKiklIUR5otG1Hl8p1s4yuvpec=
+		q/YQYNuts6MVsMvh9EVdDbIjyKM=
 		</data>
 		<key>Headers/IMRequestMacro.h</key>
 		<data>
-		4lHEdRNU5uKwiaaUJyANnGmlhNI=
+		WyV8yNb0Fe6d9wEAanWxKNNPKGM=
 		</data>
 		<key>Headers/IMRequestManager.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		AYrqPU0itEqkXFRn4AY7Uesthbk=
+		SQwC5h3m9lHTjvj54xqb4dK9MvY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -54,22 +54,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ErKiklIUR5otG1Hl8p1s4yuvpec=
+			q/YQYNuts6MVsMvh9EVdDbIjyKM=
 			</data>
 			<key>hash2</key>
 			<data>
-			QDCh9k/JbiXIgkufvhgfAbmst++QAFQbuBxSFyjTc5A=
+			JLYv3oO+Enar2JxBBF3wairyXaYD3+mPH1beamAOfRw=
 			</data>
 		</dict>
 		<key>Headers/IMRequestMacro.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4lHEdRNU5uKwiaaUJyANnGmlhNI=
+			WyV8yNb0Fe6d9wEAanWxKNNPKGM=
 			</data>
 			<key>hash2</key>
 			<data>
-			7E6qQONk1+OpCozvHm4YDq2UikLxGSaTsM631VuJBo0=
+			ZGzCSnqrnbzpqd7qdSSZnCry2lU5WUiZ5Z2+aDzP62Y=
 			</data>
 		</dict>
 		<key>Headers/IMRequestManager.h</key>
