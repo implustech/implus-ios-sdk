@@ -1,0 +1,6 @@
+framework module Pods_ImplusAnalyticsSDK {
+  umbrella header "Pods-ImplusAnalyticsSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

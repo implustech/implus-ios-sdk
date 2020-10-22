@@ -15,7 +15,7 @@ typedef NS_ENUM(NSInteger, IMRequestType) {
     IMRequestTypeDelete,
     IMRequestTypePut
 };
-#define SDKVersion @"1.1.0"
+#define SDKVersion @"1.1.1"
 
 /// screen name ID (NSString).
 /// <pre>

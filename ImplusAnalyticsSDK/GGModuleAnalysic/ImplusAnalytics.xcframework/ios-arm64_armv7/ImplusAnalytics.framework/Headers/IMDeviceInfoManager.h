@@ -271,5 +271,10 @@
 // */
 - (BOOL)isReachable;
 
+- (NSString *)getAcquisitionSource;
+- (NSString *)getAcquisitionCampaign;
+
+- (void)getAdsAttribution:(void (^)(NSDictionary *attributes))completion;
+
 @end
 
