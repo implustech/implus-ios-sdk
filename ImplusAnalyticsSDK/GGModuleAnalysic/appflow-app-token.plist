@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>project_id</key>
+	<string>ac809b61-8c21-44ab-a6d3-158c208abb30</string>
+	<key>app_id</key>
+	<string>878b9223-ff95-4aac-9a64-7d6928876270</string>
+	<key>package_name</key>
+	<string>co.implus.ioseventsdk</string>
+	<key>token_type</key>
+	<string>bearer</string>
+	<key>access_token</key>
+	<string>eyJhbGciOiJSUzI1NiIsImtpZCI6IjAwMDEiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhOTI4MzA0My0xNTgyLTRjMDQtYjMzMy1kOTIyYjczZGI3YmIiLCJpYXQiOjE1NzcwODYxNjUsImlzcyI6Ik1vbmV0aXplciIsInN1YiI6IjVkZjA2OTIwN2QxOTJiMDAxMDFlMjUwYSJ9.ENTDlaSWNtUUMWwblpJYMUo00hdt1mfTcg1RHH2k5Pxb-LBpf1TmnwXNOoWBXaiO0CN7VKHxc8XeamCQPKpNTST3Tgjs-lFZcBZrO6Z1gwc-OcJBZIL6zPVSHCE1yGQCQhfQ5RyK-AFtIPHbf8SNV8ov_BnHhsyC43KyJIoh8-XYgEfDVoG8rdlRRKm0U6xb1dtCEQRHVTLmLPj9Hc_7fCTc2G-aTI7be-OkEm-9Q4APdL_2pAuXmJ9D-ZO0ShmoRvR1KXIiEs2XRLR5nNmhaptvqoxXtxXBgP-CX9H-MxyO_i8kdvPPrYPqo8Srs7olz2dvJw6hYDO2961irYGUKg</string>
+</dict>
+</plist>

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/IMAnalytics.h</key>
 		<data>
-		HOt0nbugn6Tmt0ftIfMUfKi47zY=
+		URlMxJYnQfvhYWdr2FYKRFg5/oQ=
 		</data>
 		<key>Headers/IMDeviceInfoManager.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0shxqFZ3ML7Kaaq7D/lpSi6GjCk=
+		PeAeo6c2zqVfcTAGVL5jEKNX8HM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,11 +43,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HOt0nbugn6Tmt0ftIfMUfKi47zY=
+			URlMxJYnQfvhYWdr2FYKRFg5/oQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			u7tyWK1FH2Ku5z72QcZgHBy/owCphUsW4Y1/DFcMf1E=
+			gk6YTGhKNvxxqFn4nUhnj2H1/jSHTN2bDPe/G1mkGJ4=
 			</data>
 		</dict>
 		<key>Headers/IMDeviceInfoManager.h</key>

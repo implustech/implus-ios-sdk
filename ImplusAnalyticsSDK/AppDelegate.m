@@ -19,7 +19,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [IMAnalytics registerBigDataWithAppKey:appKey];
+    //①The first:
+//    [IMAnalytics registerBigDataWithAppKey:appKey];
+    //②the Second:
+    [IMAnalytics registerBigDataConfigImplusAnalyticsPlist];
     [IQKeyboardManager sharedManager].enable = YES;
     [IMAnalytics uploadBigDataWithType:EventTypeAppStart params:nil successBlock:^(id obj) {
          NSLog(@"%@",obj);
