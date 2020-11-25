@@ -55,7 +55,7 @@ typedef NS_ENUM(NSInteger, ParamFormatType){
 /**
  通过plist文件的方式初始化
  注意:
- 1.用此方式,必须将ImplusAnalyticsPlist.plist文件导入工程, 否则将初始化失败
+ 1.用此方式,必须将appflow-app-token.plist文件导入工程, 否则将初始化失败
  2.不要修改plist原有的参数名和值
  */
 + (void)registerBigDataConfigImplusAnalyticsPlist;
