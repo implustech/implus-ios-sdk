@@ -95,6 +95,8 @@ params:(NSDictionary *)params successBlock:(SuccessBlock)successBlock failureBlo
 + (void)uploadBigDataWithType:(EventType)eventType
 paramModel:(ParamModel *)model successBlock:(SuccessBlock)successBlock failureBlock:(FailedBlock)failedBlock;
 
++ (void)getRemoteConfigWithParam:(NSDictionary *)params successBlock:(SuccessBlock)successBlock failureBlock:(FailedBlock)failedBlock;
+
 + (void)disableFirstOpen;
 /**
  关闭日志

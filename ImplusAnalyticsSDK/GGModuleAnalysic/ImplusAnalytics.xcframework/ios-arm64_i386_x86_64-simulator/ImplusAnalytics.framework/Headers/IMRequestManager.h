@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger, IMSendDataType){
+    IMSendDataTypeEvent = 0,
+    IMSendDataTypeRemoteConfig
+};
+
 @class IMRequest;
 
 //@class IMRequest;
@@ -28,5 +33,7 @@ typedef void (^FailedBlock)(id obj);
 - (void)uploadCacheDataWithSuccessBlock:(SuccessBlock)successBlock failureBlock:(FailedBlock)failedBlock;
 
 - (void)sendRequest:(IMRequest *)request successBlock:(SuccessBlock)successBlock failureBlock:(FailedBlock)failedBlock;
+
+- (void)sendRequest:(IMRequest *)request dataType:(IMSendDataType)dataType successBlock:(SuccessBlock)successBlock failureBlock:(FailedBlock)failedBlock;
 
 @end

@@ -25,6 +25,14 @@
 //    NSString *str =  [IMDeviceInfoManager sharedManager].appsflyer_device_id;//[[IMDeviceInfoManager sharedManager] getCurrenttime];
     // Do any additional setup after loading the view.
 //    [IMAnalytics uploadBigDataWithEvent:@"test" params:@{@"test":@"test"}];
+    [IMAnalytics getRemoteConfigWithParam:@{} successBlock:^(id obj) {
+        if ([obj isKindOfClass:[NSArray class]]) {
+            NSArray *configInfo = (NSArray *)obj;
+            NSLog(@"%@",configInfo);
+        }
+    } failureBlock:^(id obj) {
+        
+    }];
 }
 
 #pragma mark - UITableViewDelegate,UITableViewDataSource
