@@ -1,5 +1,12 @@
 # ImplusAnalytics SDK
 
+##  Add a appflow-app-token configuration file
+
+``` 
+Click appflow-app-token.plist, Move your config file into the root of your Xcode project. If prompted, select to add the config file to all targets.
+
+```
+
 ## Install  with  CocoaPods
 
 ``` 
@@ -87,3 +94,4 @@ Parameter settings can be the same as sending default event
     
 }];
 ```
+
