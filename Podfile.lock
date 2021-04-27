@@ -135,7 +135,6 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - Founq_KeychainIDFA (1.0.0)
   - gRPC-Core (1.31.0):
     - gRPC-Core/Implementation (= 1.31.0)
     - gRPC-Core/Interface (= 1.31.0)
@@ -183,7 +182,6 @@ PODS:
 
 DEPENDENCIES:
   - FMDB
-  - Founq_KeychainIDFA
   - gRPC-ProtoRPC (~> 1.31.0)
   - Protobuf (~> 3.13.0)
 
@@ -192,7 +190,6 @@ SPEC REPOS:
     - abseil
     - BoringSSL-GRPC
     - FMDB
-    - Founq_KeychainIDFA
     - gRPC
     - gRPC-Core
     - gRPC-ProtoRPC
@@ -203,13 +200,12 @@ SPEC CHECKSUMS:
   abseil: 4fcdce446caa49368e0f5ba328cff93326c72a49
   BoringSSL-GRPC: 37c7e41bc5725a4c9540883ee051385710b55c01
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  Founq_KeychainIDFA: 2c2f94ac3555f95249a9ee32957614fc9540eb46
   gRPC: 784dd894f8f70971233e1b6b701d5c1d952ecfc2
   gRPC-Core: d9f36a5efffc22995ac661b41dd3b080f982a30f
   gRPC-ProtoRPC: 4459ac9632e9f3be6978f75b5e6e5cc1eb490d72
   gRPC-RxLibrary: 06ce88530c426b90f25e3035878141ef113f45cb
   Protobuf: 3dac39b34a08151c6d949560efe3f86134a3f748
 
-PODFILE CHECKSUM: ace2c3d84f98fd06849ee41d682610cb0733cd32
+PODFILE CHECKSUM: 899bac56669767847b4d1b0c1cdadf6f661849ef
 
 COCOAPODS: 1.10.0

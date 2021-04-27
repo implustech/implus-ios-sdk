@@ -7,7 +7,7 @@ target 'ImplusAnalyticsSDK' do
   
 #   pod 'AFNetworking'
    pod 'FMDB'
-   pod 'Founq_KeychainIDFA'
+#   pod 'Founq_KeychainIDFA'
 #   pod 'gRRCTest', :path => '.'
    pod "gRPC-ProtoRPC",'~>1.31.0'
 #   pod "gRPC"
