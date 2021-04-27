@@ -39,7 +39,7 @@ TODO: Add long description of the pod here.
 
   s.dependency 'gRPC-ProtoRPC', '~>1.31.0'
   s.dependency 'FMDB' 
-  s.dependency 'Founq_KeychainIDFA'
+  # s.dependency 'Founq_KeychainIDFA'
   s.dependency 'Protobuf','~>3.13.0'
 
   s.pod_target_xcconfig = {
