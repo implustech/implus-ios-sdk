@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ImplusAnalytics'
-  s.version          = '1.1.7'
+  s.version          = '1.1.8'
   s.summary          = 'A short description of ImplusAnalyticsSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -39,7 +39,7 @@ TODO: Add long description of the pod here.
 
   s.dependency 'gRPC-ProtoRPC', '~>1.31.0'
   s.dependency 'FMDB' 
-  # s.dependency 'Founq_KeychainIDFA'
+  s.dependency 'Founq_KeychainIDFA'
   s.dependency 'Protobuf','~>3.13.0'
 
   s.pod_target_xcconfig = {
